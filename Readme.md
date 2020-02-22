@@ -14,6 +14,8 @@ More info: http://www.buxtronix.net/2011/10/rotary-encoders-done-properly.html
 The base idea for this sketch is from TOPMO 3 
 https://www.xsimulator.net/community/threads/diy-arduino-buttonbox.8302/
 
+To identify the pin mumbers, that are used in the sketch, on your Arduino refer to this pin layout https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/hardware-overview-pro-micro
+
 ## Project Goal
 I wanted to build a simple - but versatile - input device for computer games (especially flight simulators) that doesn't need any special software plugins on the PC side to make it work in any type of game you like, that supports custom joystick configuration. 
 
