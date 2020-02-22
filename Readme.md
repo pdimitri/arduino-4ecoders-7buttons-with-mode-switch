@@ -17,7 +17,7 @@ https://www.xsimulator.net/community/threads/diy-arduino-buttonbox.8302/
 ## Project Goal
 I wanted to build a simple - but versatile - input device for computer games (especially flight simulators) that doesn't need any special software plugins on the PC side to make it work in any type of game you like, that supports custom joystick configuration. 
 
-Given you have an Arduino Pro Misro with already soldered pin headers, the hardware should be easy to assemble, mostly without the need to solder anything. With the exception of the status LED everything else is connectible via jumper wires and insulating screw joints.
+Given you have an Arduino Pro Micro with already soldered pin headers, the hardware should be easy to assemble, mostly without the need to solder anything. With the exception of the status LED everything else is connectible via jumper wires and insulating screw joints.
 
 
 ## Description of Hardware
