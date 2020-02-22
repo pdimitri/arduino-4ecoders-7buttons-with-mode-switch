@@ -21,6 +21,8 @@ I wanted to build a simple - but versatile - input device for computer games (es
 
 Given you have an Arduino Pro Micro with already soldered pin headers, the hardware should be easy to assemble, mostly without the need to solder anything. With the exception of the status LED everything else is connectible via jumper wires and insulating screw joints.
 
+I wanted to get a maximum number of joystick commands from a single Arduino, without the need to use more complex electronic devices like multiplexer boards, busses etc. Therefore I use a single status LED to indicate one of three modes instead of occupying two more didgital outputs of the Arduino with two more LEDs, so that every mode would be indicated by a single LED. 
+
 
 ## Description of Hardware
 
