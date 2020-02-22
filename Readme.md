@@ -14,10 +14,14 @@ More info: http://www.buxtronix.net/2011/10/rotary-encoders-done-properly.html
 The base idea for this sketch is from TOPMO 3 
 https://www.xsimulator.net/community/threads/diy-arduino-buttonbox.8302/
 
+To identify the pin numbers, that are used in the sketch, on your Arduino refer to this pin layout https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/hardware-overview-pro-micro
+
 ## Project Goal
 I wanted to build a simple - but versatile - input device for computer games (especially flight simulators) that doesn't need any special software plugins on the PC side to make it work in any type of game you like, that supports custom joystick configuration. 
 
-Given you have an Arduino Pro Misro with already soldered pin headers, the hardware should be easy to assemble, mostly without the need to solder anything. With the exception of the status LED everything else is connectible via jumper wires and insulating screw joints.
+Given you have an Arduino Pro Micro with already soldered pin headers, the hardware should be easy to assemble, mostly without the need to solder anything. With the exception of the status LED everything else is connectible via jumper wires and insulating screw joints.
+
+I wanted to get a maximum number of joystick commands from a single Arduino, without the need to use more complex electronic devices like multiplexer boards, busses etc. Therefore I use a single status LED to indicate one of three modes instead of occupying two more digital outputs of the Arduino with two more LEDs, so that every mode would be indicated by a single LED. 
 
 
 ## Description of Hardware
