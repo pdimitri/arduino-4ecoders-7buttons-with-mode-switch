@@ -34,8 +34,10 @@ My prototype consists of these parts:
 
 * An Arduino Pro Micro with soldered pin headers 
 * A couple of jumper wires like these (female/female and female/male) https://www.amazon.de/Female-Female-Male-Female-Male-Male-Steckbr%C3%BCcken-Drahtbr%C3%BCcken-bunt/dp/B01EV70C78
-* Four momentary push button like these: https://www.amazon.de/gp/product/B076SYC21Q/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1
-* Four cheap encoders with push buttons https://www.amazon.de/gp/product/B07DM2GN2Z/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1
+* Four momentary push button like these: 
+https://www.amazon.de/gp/product/B076SYC21Q
+* Four cheap encoders with push buttons 
+https://www.amazon.de/gp/product/B07D356LRH
 
 One of the push buttons acts as a mode switch, that allows to use every encoder and button in three different modes. That means, that i.e. a single enoder may emulate up to 9 different joystick buttons.
 
