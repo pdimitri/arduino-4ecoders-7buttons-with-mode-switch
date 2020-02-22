@@ -1,6 +1,6 @@
 # Four Encoders, three push buttons in three modes joystick
 
-This Sketch is meant to be used with an Arduino Pro Micro or any other Arduino with an ATmega32U4 chipset, that may act as an USB Joystick Device.
+This Arduino Sketch is meant to be used with an Arduino Pro Micro or any other Arduino with an ATmega32U4 chipset, that may act as an USB Joystick Device.
 
 **All in all my prototype emulates up to 12 encoders and additional 21 buttons.**
 
@@ -22,6 +22,8 @@ To identify the pin numbers, that are used in the sketch, on your Arduino refer 
 I wanted to build a simple - but versatile - input device for computer games (especially flight simulators) that supports some endless rotary encoders with push buttons, and that doesn't need any special software plugins on the PC side to make it work in any type of game you like, that supports custom joystick configuration. 
 
 Given you have an Arduino Pro Micro with already soldered pin headers, the hardware should be easy to assemble, mostly without the need to solder anything. With the exception of the status LED everything else is connectible via jumper wires and insulating screw joints.
+
+**Total build time, using the same connections as in my Arduino sketch, will take approximately 1 hour.**
 
 I wanted to get a maximum number of joystick commands from a single Arduino, without the need to use more complex electronic devices like multiplexer boards, busses etc. Therefore I use a single status LED to indicate one of three modes instead of occupying two more digital outputs of the Arduino with two more LEDs, so that every mode would be indicated by a single LED. 
 
@@ -48,9 +50,18 @@ A status LED (connected to a digital output pin via a 220 Ohm resistor) shows th
 ![Image of Prototype](https://github.com/pdimitri/arduino-4ecoders-7buttons-with-mode-switch/blob/master/img/box.jpg)
 
 
-## Frizing Sketches
+## Wiring
 
-This is a simplified Sketch. You need to connect all black connections to a common ground (GND)pin on the Arduino, and all red connections to a common 5 Volt source (Vcc) on the Arduino-
+Most of the wiring is done by simply using the jumper wires to plug everything together. You may also get momentary push buttons on Amazon with wires already soldered to them. So with the exception of the LED with its Resistor everything is Plug & Play.
+
+![Wiring 1](https://github.com/pdimitri/arduino-4ecoders-7buttons-with-mode-switch/blob/master/img/wiring.jpg)
+
+
+![Wiring 2](https://github.com/pdimitri/arduino-4ecoders-7buttons-with-mode-switch/blob/master/img/wiring2.jpg)
+
+## Fritzing Sketches
+
+This is a simplified wiring diagram. You need to connect all black connections to a common ground (GND)pin on the Arduino, and all red connections to a common 5 Volt source (Vcc) on the Arduino-
 
 ![Simplified Sketch](https://github.com/pdimitri/arduino-4ecoders-7buttons-with-mode-switch/blob/master/img/sketch2.PNG)
 
