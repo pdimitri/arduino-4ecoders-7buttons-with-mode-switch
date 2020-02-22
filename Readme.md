@@ -2,6 +2,8 @@
 
 This Sketch is meant to be used with an Arduino Pro Micro or any other Arduino with an ATmega32U4 chipset, that may act as an USB Joystick Device.
 
+**All in all my prototype emulates up to 12 encoders and additional 21 buttons.**
+
 The sketch uses the following libraries, that must be installed from "tools" menu within the Arduino IDE:
 
 * Joystick library from  Matthew Heironimus, https://github.com/MHeironimus/ArduinoJoystickLibrary
@@ -17,7 +19,7 @@ https://www.xsimulator.net/community/threads/diy-arduino-buttonbox.8302/
 To identify the pin numbers, that are used in the sketch, on your Arduino refer to this pin layout https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/hardware-overview-pro-micro
 
 ## Project Goal
-I wanted to build a simple - but versatile - input device for computer games (especially flight simulators) that doesn't need any special software plugins on the PC side to make it work in any type of game you like, that supports custom joystick configuration. 
+I wanted to build a simple - but versatile - input device for computer games (especially flight simulators) that supports some endless rotary encoders with push buttons, and that doesn't need any special software plugins on the PC side to make it work in any type of game you like, that supports custom joystick configuration. 
 
 Given you have an Arduino Pro Micro with already soldered pin headers, the hardware should be easy to assemble, mostly without the need to solder anything. With the exception of the status LED everything else is connectible via jumper wires and insulating screw joints.
 
@@ -35,11 +37,24 @@ My prototype consists of these parts:
 
 One of the push buttons acts as a mode switch, that allows to use every encoder and button in three different modes. That means, that i.e. a single enoder may emulate up to 9 different joystick buttons.
 
-All in all my prototype emulates up to 12 encoders and 21 buttons.
-
 A status LED (connected to a digital output pin via a 220 Ohm resistor) shows the currently selected mode. The mode button cycles through all three modes.
 
 * LED off: Mode 1
 * LED on: Mode 2
 * LED blinking: Mode 3
 
+## This is how my prototype looks like
+
+![Image of Prototype](https://github.com/pdimitri/arduino-4ecoders-7buttons-with-mode-switch/blob/master/img/box.jpg)
+
+
+## Frizing Sketches
+
+This is a simplified Sketch. You need to connect all black connections to a common ground (GND)pin on the Arduino, and all red connections to a common 5 Volt source (Vcc) on the Arduino-
+
+![Simplified Sketch](https://github.com/pdimitri/arduino-4ecoders-7buttons-with-mode-switch/blob/master/img/sketch2.PNG)
+
+
+The next Sketch shows the complete wiring, inkluding ground and power connectors. I connected ground and power connections with a Stripboard and some soldering, but using insulating screw joints instead will work as well.
+
+![Real Sketch](https://github.com/pdimitri/arduino-4ecoders-7buttons-with-mode-switch/blob/master/img/sketch1.PNG)
