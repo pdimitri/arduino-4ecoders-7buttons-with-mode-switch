@@ -68,6 +68,6 @@ This is a simplified wiring diagram. You need to connect all black connections t
 ![Simplified Sketch](https://github.com/pdimitri/arduino-4ecoders-7buttons-with-mode-switch/blob/master/img/sketch2.PNG)
 
 
-The next Sketch shows the complete wiring, inkluding ground and power connectors. I connected ground and power connections with a Stripboard and some soldering, but using insulating screw joints instead will work as well.
+The next Sketch shows the complete wiring, including ground and power connectors. I connected ground and power connections with a Stripboard and some soldering, but using insulating screw joints instead will work as well.
 
 ![Real Sketch](https://github.com/pdimitri/arduino-4ecoders-7buttons-with-mode-switch/blob/master/img/sketch1.PNG)
